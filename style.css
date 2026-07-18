@@ -87,3 +87,23 @@ transform:translateY(-8px);
 padding:40px 20px;
 text-align:center;
 }
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+gap:15px;
+padding:20px;
+}
+
+.gallery img{
+width:100%;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,.15);
+transition:0.3s;
+cursor:pointer;
+object-fit:cover;
+aspect-ratio:1/1;
+}
+
+.gallery img:hover{
+transform:scale(1.05);
+}
