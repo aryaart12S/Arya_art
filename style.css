@@ -244,3 +244,20 @@ nav ul{
     grid-template-columns:repeat(2,1fr);
 }
 }
+  .logo{
+    width:180px;
+    height:180px;
+    object-fit:cover;
+    border-radius:50%;
+    display:block;
+    margin:20px auto;
+}
+
+.product-cover{
+    width:220px;
+    height:220px;
+    object-fit:cover;
+    border-radius:15px;
+    display:block;
+    margin:auto;
+}
