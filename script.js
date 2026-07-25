@@ -92,16 +92,18 @@ slides[slideIndex-1].style.display="block";
 setTimeout(showSlides,3000);
 
 }
+const elements = document.querySelectorAll(".fade-up");
 
-/* Fade Animation */
+const observer = new IntersectionObserver((entries)=>{
+    entries.forEach(entry=>{
+        if(entry.isIntersecting){
+            entry.target.classList.add("show");
+        }
+    });
+},{
+    threshold:0.2
+});
 
-.fade-up{
-    opacity:0;
-    transform:translateY(40px);
-    transition:all .8s ease;
-}
-
-.fade-up.show{
-    opacity:1;
-    transform:translateY(0);
-}
+elements.forEach(element=>{
+    observer.observe(element);
+});
