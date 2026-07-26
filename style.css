@@ -339,3 +339,31 @@ grid-template-columns:repeat(3,1fr);
 }
 
     }
+
+.product-gallery img,
+.product-gallery video{
+    width:100%;
+    max-width:100%;
+    display:block;
+    border-radius:15px;
+    margin-bottom:15px;
+}
+
+.thumbnail-gallery{
+    display:flex;
+    gap:10px;
+    overflow-x:auto;
+}
+
+.thumbnail-gallery img{
+    width:80px;
+    height:80px;
+    object-fit:cover;
+    cursor:pointer;
+}
+
+@media (max-width:768px){
+    .product-page{
+        display:block;
+    }
+}
