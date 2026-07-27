@@ -367,3 +367,22 @@ grid-template-columns:repeat(3,1fr);
         display:block;
     }
 }
+
+
+.search-box{
+margin:30px auto;
+max-width:500px;
+}
+
+.search-box input{
+width:100%;
+padding:15px 20px;
+font-size:16px;
+border:2px solid #e91e63;
+border-radius:40px;
+outline:none;
+}
+
+.search-box input:focus{
+box-shadow:0 0 10px rgba(233,30,99,.3);
+}
