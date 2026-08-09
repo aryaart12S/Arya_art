@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Customised Name Hair Pin | Arya Art</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #fff8fb;
+            color: #222;
+        }
+
+        /* HEADER */
+        header {
+            background: #fff;
+            padding: 18px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+        }
+
+        .logo {
+            font-size: 30px;
+            font-weight: 800;
+            color: #e91e63;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #222;
+            font-size: 18px;
+            margin-left: 18px;
+        }
+
+        /* PRODUCT PAGE */
+        .product-page {
+            width: 100%;
+            max-width: 700px;
+            margin: auto;
+            padding: 15px;
+        }
+
+        /* IMAGE SLIDER */
+        .slider {
+            width: 100%;
+            overflow: hidden;
+            border-radius: 20px;
+            background: #fff;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.10);
+        }
+
+        .slides {
+            display: flex;
+            width: 700%;
+            animation: slide 21s infinite;
+        }
+
+        .slides img {
+            width: 14.2857%;
+            aspect-ratio: 1 / 1;
+            object-fit: cover;
+            display: block;
+        }
+
+        @keyframes slide {
+
+            0%, 12% {
+                transform: translateX(0);
+            }
+
+            14%, 26% {
+                transform: translateX(-14.2857%);
+            }
+
+            28%, 40% {
+                transform: translateX(-28.5714%);
+            }
+
+            42%, 54% {
+                transform: translateX(-42.8571%);
+            }
+
+            56%, 68% {
+                transform: translateX(-57.1428%);
+            }
+
+            70%, 82% {
+                transform: translateX(-71.4285%);
+            }
+
+            84%, 96% {
+                transform: translateX(-85.7142%);
+            }
+
+            100% {
+                transform: translateX(0);
+            }
+        }
+
+        /* PRODUCT INFO */
+        .product-info {
+            background: #fff;
+            margin-top: 15px;
+            padding: 20px;
+            border-radius: 20px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+        }
+
+        .product-info h1 {
+            font-size: 28px;
+            margin: 0 0 12px;
+        }
+
+        .price {
+            font-size: 28px;
+            font-weight: 800;
+            color: #e91e63;
+            margin-bottom: 18px;
+        }
+
+        /* ORDER BUTTON */
+        .order-btn {
+            display: block;
+            width: 100%;
+            text-align: center;
+            text-decoration: none;
+            background: #e91e63;
+            color: white;
+            padding: 15px;
+            border-radius: 30px;
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 22px;
+        }
+
+        /* DESCRIPTION */
+        .description {
+            font-size: 16px;
+            line-height: 1.7;
+            color: #555;
+        }
+
+        .description h2 {
+            color: #222;
+            font-size: 22px;
+            margin-bottom: 8px;
+        }
+
+        /* MOBILE */
+        @media (max-width: 600px) {
+
+            header {
+                padding: 16px;
+            }
+
+            .logo {
+                font-size: 26px;
+            }
+
+            nav a {
+                font-size: 16px;
+                margin-left: 10px;
+            }
+
+            .product-page {
+                padding: 12px;
+            }
+
+            .product-info {
+                padding: 17px;
+            }
+
+            .product-info h1 {
+                font-size: 24px;
+            }
+
+            .price {
+                font-size: 26px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="logo">Arya Art</div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+        </nav>
+    </header>
+
+
+    <!-- PRODUCT -->
+    <main class="product-page">
+
+        <!-- SLIDING IMAGES -->
+        <div class="slider">
+
+            <div class="slides">
+
+                <img src="images/customised-name-hair-pin-1.jpg"
+                     alt="Customised Name Hair Pin">
+
+                <img src="images/customised-name-hair-pin-2.jpg"
+                     alt="Customised Name Hair Pin">
+
+                <img src="images/customised-name-hair-pin-3.jpg"
+                     alt="Customised Name Hair Pin">
+
+                <img src="images/customised-name-hair-pin-4.jpg"
+                     alt="Customised Name Hair Pin">
+
+                <img src="images/customised-name-hair-pin-5.jpg"
+                     alt="Customised Name Hair Pin">
+
+                <img src="images/customised-name-hair-pin-6.jpg"
+                     alt="Customised Name Hair Pin">
+
+                <img src="images/customised-name-hair-pin-7.jpg"
+                     alt="Customised Name Hair Pin">
+
+            </div>
+
+        </div>
+
+
+        <!-- PRODUCT DETAILS -->
+        <div class="product-info">
+
+            <h1>Customised Name Hair Pin</h1>
+
+            <div class="price">
+                ₹130
+            </div>
+
+            <!-- ORDER BUTTON -->
+            <a class="order-btn"
+               href="https://wa.me/919243498424?text=Hi%20Arya%20Art,%20I%20want%20to%20order%20the%20Customised%20Name%20Hair%20Pin%20for%20₹130.">
+                Order on WhatsApp
+            </a>
+
+
+            <!-- DESCRIPTION -->
+            <div class="description">
+
+                <h2>Description</h2>
+
+                <p>
+                    Add a cute and stylish personal touch to your everyday
+                    hairstyle with our <strong>Customised Name Hair Pin</strong>.
+                    Beautifully designed with elegant bows, shimmering
+                    fabric and delicate pearl detailing, these hair pins
+                    are perfect for making your look extra special.
+                </p>
+
+                <p>
+                    ✨ Customised with your name<br>
+                    🎀 Stylish and eye-catching design<br>
+                    🤍 Pearl detailing<br>
+                    💕 Perfect for gifting<br>
+                    🌸 Handmade with care
+                </p>
+
+                <p>
+                    A perfect little accessory for birthdays, celebrations,
+                    gifting or simply adding a personalised touch to your
+                    everyday style.
+                </p>
+
+            </div>
+
+        </div>
+
+    </main>
+
+</body>
+</html>
