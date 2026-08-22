@@ -32,24 +32,27 @@
 
 
 <!-- PRODUCT IMAGES -->
+  
+  <div class="product-gallery">
 
-<div class="product-gallery">
+    <div class="image-slider">
 
-<img id="mainImage"
-src="images/chocolate-hamper-1.jpg"
-alt="Chocolate Hamper">
+        <button class="slider-btn prev" onclick="prevImage()">❮</button>
 
-<div class="thumbnail-gallery">
+        <img id="mainImage"
+             src="images/chocolate-hamper-1.jpg"
+             alt="Chocolate Hamper">
 
-<img src="images/chocolate-hamper-1.jpg"
-onclick="changeImage(this.src)"
-alt="Chocolate Hamper">
+        <button class="slider-btn next" onclick="nextImage()">❯</button>
 
-<img src="images/chocolate-hamper-2.jpg"
-onclick="changeImage(this.src)"
-alt="Chocolate Hamper">
+    </div>
 
-</div>
+    <div class="slider-dots">
+        <span class="dot active" onclick="showImage(0)"></span>
+        <span class="dot" onclick="showImage(1)"></span>
+    </div>
+
+  </div>
 
 </div>
 
