@@ -108,3 +108,43 @@ card.style.display="none";
 });
 
 }
+const productImages = [
+    "images/chocolate-hamper-1.jpg",
+    "images/chocolate-hamper-2.jpg"
+];
+
+let currentImage = 0;
+
+function showImage(index) {
+
+    currentImage = index;
+
+    document.getElementById("mainImage").src =
+        productImages[currentImage];
+
+    document.querySelectorAll(".dot").forEach((dot, i) => {
+        dot.classList.toggle("active", i === currentImage);
+    });
+}
+
+function nextImage() {
+
+    currentImage++;
+
+    if (currentImage >= productImages.length) {
+        currentImage = 0;
+    }
+
+    showImage(currentImage);
+}
+
+function prevImage() {
+
+    currentImage--;
+
+    if (currentImage < 0) {
+        currentImage = productImages.length - 1;
+    }
+
+    showImage(currentImage);
+}
