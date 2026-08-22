@@ -556,3 +556,68 @@ footer a:hover{
         font-size: 25px;
     }
 }
+.image-slider {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.image-slider img {
+    width: 100%;
+    display: block;
+    transition: opacity 0.3s ease;
+}
+
+.slider-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+    width: 42px;
+    height: 42px;
+
+    border: none;
+    border-radius: 50%;
+
+    background: rgba(255,255,255,0.9);
+    color: #e91e63;
+
+    font-size: 22px;
+    font-weight: bold;
+
+    cursor: pointer;
+    z-index: 2;
+}
+
+.slider-btn.prev {
+    left: 12px;
+}
+
+.slider-btn.next {
+    right: 12px;
+}
+
+.slider-dots {
+    text-align: center;
+    margin-top: 12px;
+}
+
+.dot {
+    display: inline-block;
+
+    width: 9px;
+    height: 9px;
+
+    margin: 0 4px;
+
+    border-radius: 50%;
+
+    background: #ccc;
+    cursor: pointer;
+}
+
+.dot.active {
+    background: #e91e63;
+    transform: scale(1.2);
+}
