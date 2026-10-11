@@ -1,0 +1,131 @@
+/* Arya Art Diwali sky animation — add to existing CSS */
+.diwali-animation {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 0;
+  border-radius: inherit;
+  isolation: isolate;
+}
+/* decorative layer only */
+
+
+
+
+
+/* The section receiving the effect should have position: relative. */
+.diwali-host { position: relative; overflow: hidden; }
+
+.di wali-host > :not(.diwali-animation) { position: relative; z-index: 1; }
+.di wali-lantern {
+  position: absolute;
+  bottom: -90px;
+  left: var(--x);
+  width: var(--size);
+  height: calc(var(--size) * 1.32);
+  border-radius: 48% 48% 42% 42%;
+  background: linear-gradient(180deg, #ff5b21 0%, #ff9d18 55%, #ffe9a0 100%);
+  box-shadow: 0 0 12px 4px rgba(255, 160, 44, .48), 0 0 34px 10px rgba(255, 183, 67, .22);
+  opacity: .88;
+  animation: diwali-float var(--duration) linear var(--delay) infinite;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.diwali-lantern::before {
+  content: "";
+  position: absolute;
+  top: -8px;
+  left: 18%;
+  width: 64%;
+  height: 9px;
+  border-radius: 50%;
+  background: #ffcc65;
+  opacity: .8;
+}
+.diwali-lantern::after {
+  content: "";
+  position: absolute;
+  top: 20%;
+  left: 12%;
+  right: 12%;
+  height: 58%;
+  border-radius: 50%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,190,.7), transparent);
+  filter: blur(2px);
+}
+.diwali-star {
+  position: absolute;
+  left: var(--x);
+  top: var(--y);
+  width: var(--size);
+  height: var(--size);
+  border-radius: 50%;
+  background: #fff3bd;
+  box-shadow: 0 0 8px 3px rgba(255, 218, 122, .45);
+  opacity: .25;
+  animation: diwali-twinkle var(--duration) ease-in-out var(--delay) infinite alternate;
+}
+.diwali-firework {
+  position: absolute;
+  left: var(--x);
+  top: var(--y);
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background: #ffe8ae;
+  box-shadow:
+    0 -20px 0 -1px #ffd18a,
+    14px -14px 0 -1px #ffd18a,
+    20px 0 0 -1px #ffd18a,
+    14px 14px 0 -1px #ffd18a,
+    0 20px 0 -1px #ffd18a,
+    -14px 14px 0 -1px #ffd18a,
+    -20px 0 0 -1px #ffd18a,
+    -14px -14px 0 -1px #ffd18a;
+  opacity: 0;
+  animation: diwali-burst 4.8s ease-out var(--delay) infinite;
+}
+@keyframes diwali-float {
+  0% { transform: translate3d(0, 0, 0) rotate(-4deg); opacity: 0; }
+  10% { opacity: .9; }
+  50% { transform: translate3d(12px, -48vh, 0) rotate(4deg); }
+  90% { opacity: .75; }
+  100% { transform: translate3d(-8px, -105vh, 0) rotate(-3deg); opacity: 0; }
+}
+@keyframes diwali-twinkle {
+  from { opacity: .18; transform: scale(.75); }
+  to { opacity: .9; transform: scale(1.35); }
+}
+@keyframes diwali-burst {
+  0%, 15% { opacity: 0; transform: scale(.25); }
+  25% { opacity: .9; transform: scale(1); }
+  48% { opacity: .4; transform: scale(1.5); }
+  65%, 100% { opacity: 0; transform: scale(1.8); }
+}
+@media (max-width: 600px) {
+  .diwali-lantern { box-shadow: 0 0 8px 2px rgba(255, 160, 44, .38), 0 0 20px 5px rgba(255, 183, 67, .16); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .diwali-lantern, .diwali-star, .diwali-firework { animation: none !important; }
+  .diwali-lantern { opacity: .35; bottom: 15%; }
+  .diwali-star { opacity: .5; }
+}
