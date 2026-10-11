@@ -10,7 +10,7 @@
       name:"Special Dry Fruit Diwali Hamper",
       category:"hampers", categoryLabel:"Gift hamper",
       description:"A floral festive gift box with a clear display window. Great for family gifting, client gifts and corporate celebrations. Bulk orders available.",
-      image:"images/diwali/special-dry-fruit-diwali-hamper.jpg",
+      image:"images/special-dry-fruit-diwali-hamper.jpg",
       tag:"CORPORATE GIFTING",
       variants:[
         {id:"without",label:"Without dry fruits",description:"Decorative gift packaging",price:180},
@@ -23,7 +23,7 @@
       name:"Resin Shubh Labh Hanging",
       category:"decor", categoryLabel:"Festive decor",
       description:"Blue resin Shubh Labh hangings with pearl detailing and lotus artwork — a festive touch for your home entrance.",
-      image:"images/diwali/resin-shubh-labh-hanging.jpg",
+      image:"images/resin-shubh-labh-hanging.jpg",
       tag:"FESTIVE DECOR",
       variants:[{id:"pair",label:"Pair of hangings",description:"Two matching hangings",price:200}],
       defaultVariant:"pair"
@@ -33,7 +33,7 @@
       name:"Personalised Dry Fruit Gift Box",
       category:"personalised", categoryLabel:"Personalised gift",
       description:"A floral gift box with a custom name or message. A thoughtful option for festive gifting and celebrations.",
-      image:"images/diwali/personalised-dry-fruit-gift-box.jpg",
+      image:"images/personalised-dry-fruit-gift-box.jpg",
       tag:"CUSTOM NAME",
       variants:[
         {id:"without",label:"Without dry fruits",description:"Personalised decorative box",price:220},
@@ -46,7 +46,7 @@
       name:"Personalised Festive Dry Fruit Tray",
       category:"personalised", categoryLabel:"Personalised gift",
       description:"A handled festive tray decorated with flowers and elegant netting. Personalise the name to make the gift your own.",
-      image:"images/diwali/personalised-festive-dry-fruit-tray.jpg",
+      image:"images/personalised-festive-dry-fruit-tray.jpg",
       tag:"PERSONALISED",
       variants:[
         {id:"without",label:"Without dry fruits",description:"Decorative tray",price:300},
@@ -59,7 +59,7 @@
       name:"Shubh Labh Floral Earrings",
       category:"accessories", categoryLabel:"Festive accessories",
       description:"Lavender floral earrings with gold detailing and pearl drops — a festive accessory or thoughtful little gift.",
-      image:"images/diwali/shubh-labh-floral-earrings.jpg",
+      image:"images/shubh-labh-floral-earrings.jpg",
       tag:"FESTIVE ACCESSORY",
       variants:[{id:"pair",label:"One pair",description:"Pair of earrings",price:250}],
       defaultVariant:"pair"
