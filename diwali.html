@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#54251f">
+  <meta name="description" content="Discover the Arya Art Diwali Collection: festive hampers, resin decor and handmade gifting.">
+  <title>Diwali Collection | Arya Art</title>
+  <link rel="stylesheet" href="diwali.css">
+</head>
+<body class="diwali-site">
+  <header class="diwali-nav">
+    <a class="brand" href="index.html" aria-label="Arya Art home">
+      <span class="brand-mark">A</span>
+      <span>ARYA <b>ART</b><small>HANDMADE WITH LOVE</small></span>
+    </a>
+    <a class="nav-home" href="index.html">← Main website</a>
+  </header>
+
+  <main>
+    <section class="diwali-hero">
+      <div class="hero-copy">
+        <p class="eyebrow">THE FESTIVE EDIT · 2026</p>
+        <h1>Diwali gifts,<br><em>made special.</em></h1>
+        <p>Thoughtful festive gifts for family, friends and corporate celebrations — chosen with love, made to feel special.</p>
+        <a class="gold-button" href="#diwali-products">Explore collection <span>↘</span></a>
+        <div class="hero-note">✦ Festive gifting · Personalised touches · Bulk enquiries</div>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="hero-orbit orbit-one"></div><div class="hero-orbit orbit-two"></div>
+        <div class="hero-diya"><span></span></div>
+        <div class="hero-spark spark-one">✦</div><div class="hero-spark spark-two">✧</div>
+        <div class="hero-art-label">A FESTIVE COLLECTION<br><b>Made with love</b></div>
+      </div>
+    </section>
+
+    <section class="collection-intro" id="diwali-products">
+      <div>
+        <p class="eyebrow dark-eyebrow">GIFT WITH MEANING</p>
+        <h2>The Diwali <em>Collection</em></h2>
+        <p class="section-description">Explore festive hampers, personalised gifts and handmade accessories.</p>
+      </div>
+      <span class="limited-note">✦ Limited pieces available</span>
+    </section>
+
+    <section class="catalogue-controls" aria-label="Search and filter products">
+      <label class="search-box">
+        <span aria-hidden="true">⌕</span>
+        <input id="diwaliSearch" type="search" placeholder="Search Diwali gifts..." autocomplete="off" aria-label="Search Diwali gifts">
+        <button id="clearSearch" type="button" aria-label="Clear search" hidden>×</button>
+      </label>
+      <div class="category-chips" id="categoryChips">
+        <button class="chip active" data-category="all" type="button">All gifts</button>
+        <button class="chip" data-category="hampers" type="button">Gift hampers</button>
+        <button class="chip" data-category="decor" type="button">Festive decor</button>
+        <button class="chip" data-category="personalised" type="button">Personalised</button>
+        <button class="chip" data-category="accessories" type="button">Accessories</button>
+      </div>
+    </section>
+
+    <section class="product-grid" id="diwaliGrid" aria-live="polite"></section>
+    <p class="empty-state" id="emptyState" hidden>No gifts found. Try another search.</p>
+
+    <section class="custom-order">
+      <div class="custom-icon">✧</div>
+      <div class="custom-copy">
+        <p class="eyebrow">MADE JUST FOR YOU</p>
+        <h2>Planning a bulk or corporate gift?</h2>
+        <p>Ask about bulk quantities, personalised names and festive gift combinations.</p>
+      </div>
+      <a id="customWhatsApp" class="dark-button" href="#" target="_blank" rel="noopener">Enquire on WhatsApp ↗</a>
+    </section>
+  </main>
+
+  <footer class="diwali-footer">
+    <a class="brand footer-brand" href="index.html"><span class="brand-mark">A</span><span>ARYA <b>ART</b><small>HANDMADE WITH LOVE</small></span></a>
+    <p>Thoughtful creations. Heartfelt celebrations.</p>
+    <a href="https://www.instagram.com/arya_art_2406/" target="_blank" rel="noopener">@arya_art_2406</a>
+  </footer>
+
+  <a class="floating-whatsapp" id="floatingWhatsApp" href="#" target="_blank" rel="noopener" aria-label="Chat with Arya Art on WhatsApp">☏</a>
+
+  <!-- Product detail popup -->
+  <div class="modal-backdrop" id="productModal" hidden>
+    <section class="product-modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal-close" id="closeModal" type="button" aria-label="Close product details">×</button>
+      <div id="modalContent"></div>
+    </section>
+  </div>
+
+  <script src="diwali.js"></script>
+</body>
+</html>
