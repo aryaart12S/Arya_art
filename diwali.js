@@ -55,7 +55,7 @@
       defaultVariant:"with", customName:true
     },
     {
-      id:"shubh-labh-floral-earrings",
+      id:"shubh-labh-floral-hanging",
       name:"Shubh Labh Floral Earrings",
       category:"accessories", categoryLabel:"Festive accessories",
       description:"Lavender floral earrings with gold detailing and pearl drops — a festive accessory or thoughtful little gift.",
