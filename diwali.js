@@ -64,6 +64,75 @@
       variants:[{id:"pair",label:"One pair",description:"Pair of earrings",price:250}],
       defaultVariant:"pair"
     }
+    ,
+  {
+    id: "royal-lotus-diya",
+    name: "Royal Lotus Diya Candle Holder",
+    category: "decor",
+    categoryLabel: "Festive decor",
+    description: "Elegant lotus-shaped candle holder with golden detailing and pearl accents. Perfect for Diwali decoration and festive gifting.",
+    image: "images/royal-lotus-diya.jpg",
+    tag: "DIWALI SPECIAL",
+    variants: [
+      {
+        id: "single",
+        label: "Single Piece",
+        description: "One decorative diya holder with candle",
+        price: 100
+      },
+      {
+        id: "bulk",
+        label: "Bulk Order",
+        description: "₹75 per piece for bulk orders",
+        price: 75
+      }
+    ],
+    defaultVariant: "single",
+    bulk: true
+  },
+  {
+    id: "shubh-labh-set",
+    name: "Shubh Labh Resin Hanging Set",
+    category: "decor",
+    categoryLabel: "Festive decor",
+    description: "Beautiful resin Shubh and Labh hangings with sparkling embellishments, golden details and pearl accents. Perfect for decorating your entrance during Diwali.",
+    image: "images/shubh-labh-set.jpg",
+    tag: "FESTIVE FAVOURITE",
+    variants: [
+      {
+        id: "pair",
+        label: "Set of 2",
+        description: "One Shubh and one Labh hanging",
+        price: 120
+      }
+    ],
+    defaultVariant: "pair"
+  },
+  {
+    id: "royal-dryfruit-hamper",
+    name: "Royal Festive Dry Fruit Hamper",
+    category: "hampers",
+    categoryLabel: "Gift hamper",
+    description: "A premium wooden festive tray decorated with elegant sky-blue organza pouches, blue bows and golden accents. Choose with or without dry fruits for your Diwali gifting.",
+    image: "images/royal-dryfruit-hamper.jpg",
+    tag: "DIWALI GIFTING",
+    variants: [
+      {
+        id: "without",
+        label: "Without Dry Fruits",
+        description: "Decorative gift tray without dry fruits",
+        price: 220
+      },
+      {
+        id: "with",
+        label: "With Dry Fruits",
+        description: "Gift tray with dry fruits",
+        price: 500
+      }
+    ],
+    defaultVariant: "without",
+    customName: false
+  }
   ];
 
   const grid = document.getElementById("diwaliGrid");
