@@ -132,7 +132,7 @@
     ],
     defaultVariant: "without",
     customName: false
-  }
+  },
     {
   title: "Handcrafted Resin Shubh Labh Hangings ✨",
   image: "images/shubh-labh-resin-hangings.jpg",
