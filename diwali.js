@@ -133,6 +133,27 @@
     defaultVariant: "without",
     customName: false
   }
+    {
+  title: "Handcrafted Resin Shubh Labh Hangings ✨",
+  image: "images/shubh-labh-resin-hangings.jpg",
+  category: "decor",
+  price: "₹149",
+  description: "Handcrafted ruby-red resin floral hangings with golden Shubh Labh lettering, pearl embellishments and gold detailing. Perfect for doors, pooja rooms and Diwali gifting. Price is for 1 pair."
+},
+{
+  title: "Lotus Glow Tealight Holders 🌸",
+  image: "images/lotus-glow-tealight-holders.jpg",
+  category: "decor",
+  price: "₹249",
+  description: "Beautiful handcrafted lotus-inspired tealight holders with festive pink and gold detailing. Perfect for Diwali decoration and gifting. Price is for a set of 4."
+},
+{
+  title: "Floral Resin Tealight Holders ✨",
+  image: "images/floral-resin-tealight-holders.jpg",
+  category: "decor",
+  price: "₹299",
+  description: "Glossy handcrafted resin floral holders with pearl embellishments and ornate golden candle cups. A stylish choice for festive home decor and gifting. Price is for a set of 4."
+},
   ];
 
   const grid = document.getElementById("diwaliGrid");
