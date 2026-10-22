@@ -65,7 +65,6 @@
       defaultVariant:"pair"
     }
   ];
-const products = [
   {
     id: "shubh-labh-blue-wall-hangings",
     name: "Shubh Labh Wall Hangings",
