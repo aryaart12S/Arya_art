@@ -279,6 +279,112 @@
       ],
       defaultVariant: "set4"
     }
+    {
+  id: "candle-light-rangoli",
+  name: "Candle Light Rangoli",
+  category: "decor",
+  categoryLabel: "Festive Decor",
+  description:
+    "Add a warm and luxurious festive glow to your home with this beautiful Candle Light Rangoli. Adorned with vibrant colours, golden detailing and elegant embellishments, it is perfect for decorating your entrance, pooja space or festive corner.",
+  image: "images/diwali/candle-light-rangoli.jpg",
+  tag: "DIWALI DECOR",
+  variants: [
+    {
+      id: "single",
+      label: "One Rangoli",
+      description: "Decorative candle light rangoli",
+      price: 250
+    }
+  ],
+  defaultVariant: "single"
+},
+
+{
+  id: "floral-diya-set",
+  name: "Handcrafted Floral Diya Set",
+  category: "decor",
+  categoryLabel: "Festive Decor",
+  description:
+    "Brighten your Diwali celebrations with these beautiful handcrafted floral diyas. Featuring vibrant flower-shaped designs, pearl embellishments and elegant golden diya holders, they are perfect for festive decorations, pooja and gifting.",
+  image: "images/diwali/floral-diya-set.jpg",
+  tag: "FESTIVE FAVOURITE",
+  variants: [
+    {
+      id: "set-of-two",
+      label: "Set of 2",
+      description: "Two decorative floral diyas",
+      price: 200
+    }
+  ],
+  defaultVariant: "set-of-two"
+},
+
+{
+  id: "pearl-diamond-diya",
+  name: "Pearl Diamond Designer Diya",
+  category: "decor",
+  categoryLabel: "Festive Decor",
+  description:
+    "Give your festive decor a royal touch with this elegant diamond-shaped diya. Beautifully decorated with pearl detailing, golden accents and rich pink embellishments, it makes a stunning addition to your Diwali pooja and home decor.",
+  image: "images/diwali/pearl-diamond-diya.jpg",
+  tag: "PREMIUM DIYA",
+  variants: [
+    {
+      id: "single",
+      label: "One Diya",
+      description: "Decorative pearl diamond diya",
+      price: 130
+    }
+  ],
+  defaultVariant: "single"
+},
+
+{
+  id: "diwali-snack-hamper",
+  name: "Diwali Special Snack Hamper",
+  category: "hampers",
+  categoryLabel: "Festive Hampers",
+  description:
+    "🪔✨ Make your Diwali sweeter with our beautifully wrapped hamper filled with delicious snacks, chocolates and treats! 🎁💖 Thoughtfully arranged in elegant festive packaging, it is perfect for gifting your loved ones, friends and family.\n\n✨ Customisation Available\n📩 DM to Order\n🚚 All India Shipping Available",
+  image: "images/diwali/diwali-snack-hamper.jpg",
+  tag: "DIWALI SPECIAL",
+  variants: [
+    {
+      id: "standard",
+      label: "Snack Hamper",
+      description: "Festively wrapped snack and chocolate hamper",
+      price: 450
+    }
+  ],
+  defaultVariant: "standard",
+  customName: true
+},
+
+{
+  id: "diwali-dry-fruit-hamper",
+  name: "Premium Diwali Dry Fruit Gift Hamper",
+  category: "hampers",
+  categoryLabel: "Festive Hampers",
+  description:
+    "Celebrate the festival of lights with our elegant dry fruit gift hamper. Beautifully arranged jars with premium festive wrapping make this hamper a thoughtful gift for family, friends, clients and corporate celebrations. Choose the option that suits your gifting needs.",
+  image: "images/diwali/diwali-dry-fruit-hamper.jpg",
+  tag: "PREMIUM GIFTING",
+  variants: [
+    {
+      id: "without",
+      label: "Without Dry Fruits",
+      description: "Decorative gift hamper packaging without dry fruits",
+      price: 220
+    },
+    {
+      id: "with",
+      label: "With Dry Fruits",
+      description: "Gift hamper with dry fruits",
+      price: 500
+    }
+  ],
+  defaultVariant: "with"
+  }
   ];
    const grid = document.getElementById("diwaliGrid");
   const search = document.getElementById("diwaliSearch");
