@@ -65,7 +65,148 @@
       defaultVariant:"pair"
     }
   ];
-
+const products = [
+  {
+    id: "shubh-labh-blue-wall-hangings",
+    name: "Shubh Labh Wall Hangings",
+    category: "decor",
+    categoryLabel: "Festive Decor",
+    description: "Bring blessings and festive elegance to your home with these beautiful blue Shubh Labh wall hangings. Designed with golden detailing, floral accents and pearl embellishments, they are perfect for your main entrance, pooja room or Diwali decoration.",
+    image: "images/shubh-labh-blue-wall-hangings.jpg",
+    tag: "FESTIVE DECOR",
+    variants: [
+      {
+        id: "pair",
+        label: "Pair of hangings",
+        description: "One Shubh and one Labh hanging",
+        price: 180
+      }
+    ],
+    defaultVariant: "pair"
+  },
+  {
+    id: "premium-dry-fruit-gift-tray",
+    name: "Premium Dry Fruit Gift Tray",
+    category: "hampers",
+    categoryLabel: "Gift Hamper",
+    description: "A beautifully arranged festive tray featuring elegant blue bows, decorative net pouches and assorted dry fruits. A thoughtful gifting choice for family, friends, celebrations and corporate Diwali gifting.",
+    image: "images/premium-dry-fruit-gift-tray.jpg",
+    tag: "FESTIVE GIFTING",
+    variants: [
+      {
+        id: "without",
+        label: "Without dry fruits",
+        description: "Decorative gift tray",
+        price: 220
+      },
+      {
+        id: "with",
+        label: "With dry fruits",
+        description: "Gift tray with dry fruits",
+        price: 500
+      }
+    ],
+    defaultVariant: "with",
+    bulk: true
+  },
+  {
+    id: "floral-resin-tealight-holder-single",
+    name: "Floral Resin Tealight Holder",
+    category: "decor",
+    categoryLabel: "Festive Decor",
+    description: "Add a beautiful festive glow to your home with a handcrafted floral resin tealight holder. Featuring rich colours, golden accents and an elegant candle cup, it is perfect for pooja corners, festive tables and Diwali gifting.",
+    image: "images/floral-resin-tealight-holder.jpg",
+    tag: "HANDCRAFTED",
+    variants: [
+      {
+        id: "single",
+        label: "Single piece with candle",
+        description: "One tealight holder with candle",
+        price: 100
+      },
+      {
+        id: "bulk",
+        label: "Bulk order price",
+        description: "₹75 per piece on bulk orders",
+        price: 75
+      }
+    ],
+    defaultVariant: "single",
+    bulk: true
+  },
+  {
+    id: "shubh-labh-hanging-set",
+    name: "Shubh Labh Hangings",
+    category: "decor",
+    categoryLabel: "Festive Decor",
+    description: "Welcome prosperity and positivity into your home with this elegant Shubh Labh hanging set. The deep red floral design, golden lettering and pearl accents make it a beautiful choice for your entrance, festive decorations and pooja space.",
+    image: "images/shubh-labh-hanging-set.jpg",
+    tag: "AUSPICIOUS DECOR",
+    variants: [
+      {
+        id: "set",
+        label: "Set of 2",
+        description: "One Shubh and one Labh hanging",
+        price: 120
+      }
+    ],
+    defaultVariant: "set"
+  },
+  {
+    id: "handcrafted-resin-shubh-labh-floral-hangings",
+    name: "Handcrafted Resin Shubh Labh Floral Hangings",
+    category: "decor",
+    categoryLabel: "Festive Decor",
+    description: "✨ Handcrafted with vibrant ruby-red resin petals, golden Hindi lettering for Shubh and Labh, delicate crystal-pearl flower accents and a decorative pearl loop. The glossy resin finish and metallic gold edging create a premium festive look. Perfect for main doors, pooja rooms, Diwali decoration and gifting.",
+    image: "images/resin-shubh-labh-floral-hangings.jpg",
+    tag: "HANDCRAFTED",
+    variants: [
+      {
+        id: "pair",
+        label: "Pair of hangings",
+        description: "One Shubh and one Labh hanging",
+        price: 149
+      }
+    ],
+    defaultVariant: "pair"
+  },
+  {
+    id: "floral-resin-tealight-holders-set-of-4",
+    name: "Floral Resin Tealight Holders",
+    category: "decor",
+    categoryLabel: "Festive Decor",
+    description: "✨ Handcrafted floral resin tealight holders with a glossy finish, rich festive colours and elegant golden metallic accents. Adorned with delicate pearl embellishments and ornate golden candle cups, these holders create a warm, radiant glow for Diwali celebrations. A stylish keepsake for festive styling and gifting.",
+    image: "images/floral-resin-tealight-holders-set-of-4.jpg",
+    tag: "PREMIUM FESTIVE DECOR",
+    variants: [
+      {
+        id: "set-of-4",
+        label: "Set of 4",
+        description: "Four assorted floral tealight holders",
+        price: 299
+      }
+    ],
+    defaultVariant: "set-of-4"
+  },
+  {
+    id: "handcrafted-lotus-tealight-diya-set",
+    name: "Handcrafted Lotus Tealight Diya Set",
+    category: "decor",
+    categoryLabel: "Festive Decor",
+    description: "🪔 Add a graceful traditional touch to your Diwali celebrations with these handcrafted pink-and-gold standing lotus tealight holders. Featuring elegant lotus motifs and pearl-ring bases, they create a warm festive glow for pooja spaces, entrances and decorative tables. Perfect for festive styling and gifting.",
+    image: "images/handcrafted-lotus-tealight-diya-set.jpg",
+    tag: "LOTUS COLLECTION",
+    variants: [
+      {
+        id: "set-of-4",
+        label: "Set of 4",
+        description: "Four lotus tealight diya holders",
+        price: 249
+      }
+    ],
+    defaultVariant: "set-of-4"
+  }
+];
   const grid = document.getElementById("diwaliGrid");
   const search = document.getElementById("diwaliSearch");
   const clearSearch = document.getElementById("clearSearch");
