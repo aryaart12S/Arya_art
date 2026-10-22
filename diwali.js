@@ -13,7 +13,7 @@
       categoryLabel: "Gift hamper",
       description:
         "A floral festive gift box with a clear display window. Perfect for family gifting, client gifts and corporate celebrations. Bulk orders available.",
-      image: "images/diwali/special-dry-fruit-diwali-hamper.jpg",
+      image: "images/special-dry-fruit-diwali-hamper.jpg",
       tag: "CORPORATE GIFTING",
       variants: [
         {
@@ -40,7 +40,7 @@
       categoryLabel: "Festive decor",
       description:
         "Beautiful resin Shubh Labh hangings with pearl detailing and lotus artwork. Perfect for your home entrance.",
-      image: "images/diwali/resin-shubh-labh-hanging.jpg",
+      image: "images/resin-shubh-labh-hanging.jpg",
       tag: "FESTIVE DECOR",
       variants: [
         {
@@ -60,7 +60,7 @@
       categoryLabel: "Personalised gift",
       description:
         "A floral gift box with a custom name or message. A thoughtful choice for festive gifting.",
-      image: "images/diwali/personalised-dry-fruit-gift-box.jpg",
+      image: "images/personalised-dry-fruit-gift-box.jpg",
       tag: "CUSTOM NAME",
       variants: [
         {
@@ -87,7 +87,7 @@
       categoryLabel: "Personalised gift",
       description:
         "A festive tray decorated with flowers and elegant netting. Add your preferred name to personalise the gift.",
-      image: "images/diwali/personalised-festive-dry-fruit-tray.jpg",
+      image: "images/personalised-festive-dry-fruit-tray.jpg",
       tag: "PERSONALISED",
       variants: [
         {
@@ -114,7 +114,7 @@
       categoryLabel: "Festive accessories",
       description:
         "Floral earrings with gold detailing and pearl drops. A beautiful festive accessory or little gift.",
-      image: "images/diwali/shubh-labh-floral-earrings.jpg",
+      image: "images/shubh-labh-floral-earrings.jpg",
       tag: "FESTIVE ACCESSORY",
       variants: [
         {
@@ -134,7 +134,7 @@
       categoryLabel: "Festive decor",
       description:
         "Decorative blue Shubh Labh hangings for doors, walls and festive home styling.",
-      image: "images/diwali/shubh-labh-blue-wall-hangings.jpg",
+      image: "images/shubh-labh-blue-wall-hangings.jpg",
       tag: "DIWALI DECOR",
       variants: [
         {
@@ -154,7 +154,7 @@
       categoryLabel: "Gift hamper",
       description:
         "An elegant handcrafted festive gift tray. Choose the decorative tray alone or add dry fruits.",
-      image: "images/diwali/premium-dry-fruit-gift-tray.jpg",
+      image: "images/premium-dry-fruit-gift-tray.jpg",
       tag: "FESTIVE GIFTING",
       variants: [
         {
@@ -180,7 +180,7 @@
       categoryLabel: "Festive decor",
       description:
         "A handcrafted floral resin tealight holder with a candle. Bulk-order pricing is available.",
-      image: "images/diwali/floral-resin-tealight-holder.jpg",
+      image: "images/floral-resin-tealight-holder.jpg",
       tag: "CANDLE INCLUDED",
       variants: [
         {
@@ -207,7 +207,7 @@
       categoryLabel: "Festive decor",
       description:
         "A festive Shubh Labh hanging set for your entrance, pooja area or home.",
-      image: "images/diwali/shubh-labh-hanging-set.jpg",
+      image: "images/shubh-labh-hanging-set.jpg",
       tag: "FESTIVE FAVOURITE",
       variants: [
         {
@@ -227,7 +227,7 @@
       categoryLabel: "Festive decor",
       description:
         "Handcrafted floral resin Shubh Labh hangings for your doorway and Diwali decorations.",
-      image: "images/diwali/resin-shubh-labh-floral-hangings.jpg",
+      image: "images/resin-shubh-labh-floral-hangings.jpg",
       tag: "HANDCRAFTED",
       variants: [
         {
@@ -247,7 +247,7 @@
       categoryLabel: "Festive decor",
       description:
         "A coordinated set of four floral resin tealight holders for festive tables, pooja corners and gifting.",
-      image: "images/diwali/floral-resin-tealight-holders-set-of-4.jpg",
+      image: "images/floral-resin-tealight-holders-set-of-4.jpg",
       tag: "SET OF 4",
       variants: [
         {
@@ -267,7 +267,7 @@
       categoryLabel: "Festive decor",
       description:
         "A handcrafted lotus-inspired tealight diya set for your home or pooja space.",
-      image: "images/diwali/handcrafted-lotus-tealight-diya-set.jpg",
+      image: "images/handcrafted-lotus-tealight-diya-set.jpg",
       tag: "LOTUS DESIGN",
       variants: [
         {
