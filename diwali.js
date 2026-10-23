@@ -199,8 +199,8 @@
       defaultVariant: "set2"
     },
     {
-      id: "designer-diya-single",
-      name: "Designer Festive Diya",
+      id: "pearl-diamond-diya ",
+      name: "PEARL DIAMOND DIYA",
       category: "decor",
       categoryLabel: "Festive decor",
       description: "A decorative designer diya to brighten your pooja space or festive arrangement. A thoughtful small gift for Diwali.",
