@@ -2,390 +2,265 @@
 (() => {
   "use strict";
 
-  const BASE = "https://aryaart12s.github.io/Arya_art/";
-  const WHATSAPP_NUMBER = "919243498424";
 
-  const products = [
-    {
-      id: "special-dry-fruit-diwali-hamper",
-      name: "Special Dry Fruit Diwali Hamper",
-      category: "hampers",
-      categoryLabel: "Gift hamper",
-      description:
-        "A floral festive gift box with a clear display window. Perfect for family gifting, client gifts and corporate celebrations. Bulk orders available.",
-      image: "images/special-dry-fruit-diwali-hamper.jpg",
-      tag: "CORPORATE GIFTING",
-      variants: [
-        {
-          id: "without",
-          label: "Without dry fruits",
-          description: "Decorative gift packaging",
-          price: 180
-        },
-        {
-          id: "with",
-          label: "With dry fruits",
-          description: "Gift hamper with dry fruits",
-          price: 300
-        }
-      ],
-      defaultVariant: "with",
-      bulk: true
-    },
+const products = [
+  {
+    id: "special-dry-fruit-diwali-hamper",
+    name: "Special Dry Fruit Diwali Hamper",
+    category: "hampers",
+    categoryLabel: "Gift Hampers",
+    description: "A beautiful festive hamper, perfect for Diwali gifting, family celebrations and corporate gifting. Bulk orders are available.",
+    image: "images/diwali/special-dry-fruit-diwali-hamper.jpg",
+    tag: "Corporate Gifting",
+    bulk: true,
+    variants: [
+      { id: "without-dry-fruits", label: "Without Dry Fruits", description: "Decorative hamper without dry fruits", price: 180 },
+      { id: "with-dry-fruits", label: "With Dry Fruits", description: "Festive hamper with dry fruits", price: 300 }
+    ],
+    defaultVariant: "without-dry-fruits"
+  },
 
-    {
-      id: "resin-shubh-labh-hanging",
-      name: "Resin Shubh Labh Hanging",
-      category: "decor",
-      categoryLabel: "Festive decor",
-      description:
-        "Beautiful resin Shubh Labh hangings with pearl detailing and lotus artwork. Perfect for your home entrance.",
-      image: "images/resin-shubh-labh-hanging.jpg",
-      tag: "FESTIVE DECOR",
-      variants: [
-        {
-          id: "pair",
-          label: "Pair of hangings",
-          description: "Two matching hangings",
-          price: 200
-        }
-      ],
-      defaultVariant: "pair"
-    },
+  {
+    id: "resin-shubh-labh-hanging",
+    name: "Resin Shubh Labh Hanging",
+    category: "hangings",
+    categoryLabel: "Wall Hangings",
+    description: "Beautiful handcrafted Shubh Labh hangings to welcome prosperity and positivity into your home this Diwali.",
+    image: "images/diwali/resin-shubh-labh-hanging.jpg",
+    tag: "Festive Special",
+    variants: [
+      { id: "pair", label: "Pair of 2", description: "One complete pair", price: 200 }
+    ],
+    defaultVariant: "pair"
+  },
 
-    {
-      id: "personalised-dry-fruit-gift-box",
-      name: "Personalised Dry Fruit Gift Box",
-      category: "personalised",
-      categoryLabel: "Personalised gift",
-      description:
-        "A floral gift box with a custom name or message. A thoughtful choice for festive gifting.",
-      image: "images/personalised-dry-fruit-gift-box.jpg",
-      tag: "CUSTOM NAME",
-      variants: [
-        {
-          id: "without",
-          label: "Without dry fruits",
-          description: "Personalised decorative box",
-          price: 220
-        },
-        {
-          id: "with",
-          label: "With dry fruits",
-          description: "Personalised box with dry fruits",
-          price: 520
-        }
-      ],
-      defaultVariant: "with",
-      customName: true
-    },
+  {
+    id: "personalised-dry-fruit-gift-box",
+    name: "Personalised Dry Fruit Gift Box",
+    category: "hampers",
+    categoryLabel: "Personalised Gifts",
+    description: "Make your Diwali gifting special with a personalised gift box. Your preferred name can be added to make it memorable.",
+    image: "images/diwali/personalised-dry-fruit-gift-box.jpg",
+    tag: "Personalised",
+    customName: true,
+    variants: [
+      { id: "without-dry-fruits", label: "Without Dry Fruits", description: "Personalised gift box", price: 220 },
+      { id: "with-dry-fruits", label: "With Dry Fruits", description: "Personalised box with dry fruits", price: 520 }
+    ],
+    defaultVariant: "without-dry-fruits"
+  },
 
-    {
-      id: "personalised-festive-dry-fruit-tray",
-      name: "Personalised Festive Dry Fruit Tray",
-      category: "personalised",
-      categoryLabel: "Personalised gift",
-      description:
-        "A festive tray decorated with flowers and elegant netting. Add your preferred name to personalise the gift.",
-      image: "images/personalised-festive-dry-fruit-tray.jpg",
-      tag: "PERSONALISED",
-      variants: [
-        {
-          id: "without",
-          label: "Without dry fruits",
-          description: "Decorative tray",
-          price: 300
-        },
-        {
-          id: "with",
-          label: "With dry fruits",
-          description: "Tray with dry fruits",
-          price: 500
-        }
-      ],
-      defaultVariant: "with",
-      customName: true
-    },
+  {
+    id: "personalised-festive-dry-fruit-tray",
+    name: "Personalised Festive Dry Fruit Tray",
+    category: "hampers",
+    categoryLabel: "Personalised Gifts",
+    description: "An elegant festive tray with a personalised name option, perfect for gifting loved ones and celebrating Diwali.",
+    image: "images/diwali/personalised-festive-dry-fruit-tray.jpg",
+    tag: "Custom Name",
+    customName: true,
+    variants: [
+      { id: "without-dry-fruits", label: "Without Dry Fruits", description: "Personalised decorative tray", price: 300 },
+      { id: "with-dry-fruits", label: "With Dry Fruits", description: "Personalised tray with dry fruits", price: 500 }
+    ],
+    defaultVariant: "without-dry-fruits"
+  },
 
-    {
-      id: "shubh-labh-floral-earrings",
-      name: "Shubh Labh Floral Earrings",
-      category: "accessories",
-      categoryLabel: "Festive accessories",
-      description:
-        "Floral earrings with gold detailing and pearl drops. A beautiful festive accessory or little gift.",
-      image: "images/shubh-labh-floral-earrings.jpg",
-      tag: "FESTIVE ACCESSORY",
-      variants: [
-        {
-          id: "pair",
-          label: "One pair",
-          description: "Pair of earrings",
-          price: 250
-        }
-      ],
-      defaultVariant: "pair"
-    },
+  {
+    id: "custom-name-gift",
+    name: "Custom Name Diwali Gift",
+    category: "personalised",
+    categoryLabel: "Personalised Gifts",
+    description: "A thoughtful handmade Diwali gift with a name of your choice. A special keepsake for festive gifting.",
+    image: "images/diwali/custom-name-gift.jpg",
+    tag: "Made to Order",
+    customName: true,
+    variants: [
+      { id: "standard", label: "Standard Design", description: "Custom name gift", price: 250 }
+    ],
+    defaultVariant: "standard"
+  },
 
-    {
-      id: "shubh-labh-blue-wall-hangings",
-      name: "Blue Shubh Labh Wall Hangings",
-      category: "decor",
-      categoryLabel: "Festive decor",
-      description:
-        "Decorative blue Shubh Labh hangings for doors, walls and festive home styling.",
-      image: "images/shubh-labh-blue-wall-hangings.jpg",
-      tag: "DIWALI DECOR",
-      variants: [
-        {
-          id: "pair",
-          label: "Pair of hangings",
-          description: "Two matching wall hangings",
-          price: 180
-        }
-      ],
-      defaultVariant: "pair"
-    },
+  {
+    id: "blue-shubh-labh-wall-hangings",
+    name: "Blue Shubh Labh Wall Hangings",
+    category: "hangings",
+    categoryLabel: "Wall Hangings",
+    description: "Decorative blue-themed Shubh Labh hangings that add a colourful traditional touch to your festive home decor.",
+    image: "images/diwali/shubh-labh-blue-wall-hangings.jpg",
+    tag: "Festive Decor",
+    variants: [
+      { id: "pair", label: "Pair of 2", description: "Complete hanging pair", price: 180 }
+    ],
+    defaultVariant: "pair"
+  },
 
-    {
-      id: "premium-dry-fruit-gift-tray",
-      name: "Premium Dry Fruit Gift Tray",
-      category: "hampers",
-      categoryLabel: "Gift hamper",
-      description:
-        "An elegant handcrafted festive gift tray. Choose the decorative tray alone or add dry fruits.",
-      image: "images/premium-dry-fruit-gift-tray.jpg",
-      tag: "FESTIVE GIFTING",
-      variants: [
-        {
-          id: "without",
-          label: "Without dry fruits",
-          description: "Decorative gift tray only",
-          price: 220
-        },
-        {
-          id: "with",
-          label: "With dry fruits",
-          description: "Gift tray with dry fruits",
-          price: 500
-        }
-      ],
-      defaultVariant: "with"
-    },
+  {
+    id: "premium-dry-fruit-gift-tray",
+    name: "Premium Dry Fruit Gift Tray",
+    category: "hampers",
+    categoryLabel: "Gift Hampers",
+    description: "A premium-looking festive tray for Diwali gifting, celebrations and special occasions.",
+    image: "images/diwali/premium-dry-fruit-gift-tray.jpg",
+    tag: "Premium Gift",
+    variants: [
+      { id: "without-dry-fruits", label: "Without Dry Fruits", description: "Decorative gift tray", price: 220 },
+      { id: "with-dry-fruits", label: "With Dry Fruits", description: "Gift tray with dry fruits", price: 500 }
+    ],
+    defaultVariant: "without-dry-fruits"
+  },
 
-    {
-      id: "floral-resin-tealight-holder",
-      name: "Floral Resin Tealight Holder",
-      category: "decor",
-      categoryLabel: "Festive decor",
-      description:
-        "A handcrafted floral resin tealight holder with a candle. Bulk-order pricing is available.",
-      image: "images/floral-resin-tealight-holder.jpg",
-      tag: "CANDLE INCLUDED",
-      variants: [
-        {
-          id: "single",
-          label: "Single piece with candle",
-          description: "One holder with candle",
-          price: 100
-        },
-        {
-          id: "bulk",
-          label: "Bulk order price",
-          description: "Per piece for bulk orders",
-          price: 75
-        }
-      ],
-      defaultVariant: "single",
-      bulk: true
-    },
+  {
+    id: "floral-resin-tealight-holder",
+    name: "Floral Resin Tealight Holder",
+    category: "diyas",
+    categoryLabel: "Diyas & Candle Holders",
+    description: "A handmade floral resin candle holder to create a warm and elegant festive ambience. Bulk orders are available.",
+    image: "images/diwali/floral-resin-tealight-holder.jpg",
+    tag: "Bulk Orders",
+    bulk: true,
+    variants: [
+      { id: "single", label: "Single Piece", description: "One holder with candle", price: 100 },
+      { id: "bulk", label: "Bulk Order", description: "Per-piece price for bulk orders", price: 75 }
+    ],
+    defaultVariant: "single"
+  },
 
-    {
-      id: "shubh-labh-hanging-set",
-      name: "Shubh Labh Hanging Set",
-      category: "decor",
-      categoryLabel: "Festive decor",
-      description:
-        "A festive Shubh Labh hanging set for your entrance, pooja area or home.",
-      image: "images/shubh-labh-hanging-set.jpg",
-      tag: "FESTIVE FAVOURITE",
-      variants: [
-        {
-          id: "set",
-          label: "One set",
-          description: "Decorative hanging set",
-          price: 120
-        }
-      ],
-      defaultVariant: "set"
-    },
+  {
+    id: "shubh-labh-hanging-set",
+    name: "Shubh Labh Hanging Set",
+    category: "hangings",
+    categoryLabel: "Wall Hangings",
+    description: "A traditional Shubh Labh decorative hanging set to make your entrance and festive decor more beautiful.",
+    image: "images/diwali/shubh-labh-hanging-set.jpg",
+    tag: "Festive Pick",
+    variants: [
+      { id: "set", label: "Complete Set", description: "One decorative set", price: 120 }
+    ],
+    defaultVariant: "set"
+  },
 
-    {
-      id: "resin-shubh-labh-floral-hangings",
-      name: "Handcrafted Resin Shubh Labh Floral Hangings",
-      category: "decor",
-      categoryLabel: "Festive decor",
-      description:
-        "Handcrafted floral resin Shubh Labh hangings for your doorway and Diwali decorations.",
-      image: "images/resin-shubh-labh-floral-hangings.jpg",
-      tag: "HANDCRAFTED",
-      variants: [
-        {
-          id: "pair",
-          label: "Pair of hangings",
-          description: "Two matching floral hangings",
-          price: 149
-        }
-      ],
-      defaultVariant: "pair"
-    },
+  {
+    id: "handcrafted-resin-shubh-labh-floral-hangings",
+    name: "Handcrafted Resin Shubh Labh Floral Hangings",
+    category: "hangings",
+    categoryLabel: "Wall Hangings",
+    description: "Handcrafted floral resin hangings with traditional Shubh Labh detailing for a beautiful festive entrance.",
+    image: "images/diwali/resin-shubh-labh-floral-hangings.jpg",
+    tag: "Handcrafted",
+    variants: [
+      { id: "pair", label: "Pair of 2", description: "One complete pair", price: 149 }
+    ],
+    defaultVariant: "pair"
+  },
 
-    {
-      id: "floral-resin-tealight-holders-set-of-4",
-      name: "Floral Resin Tealight Holders - Set of 4",
-      category: "decor",
-      categoryLabel: "Festive decor",
-      description:
-        "A coordinated set of four floral resin tealight holders for festive tables, pooja corners and gifting.",
-      image: "images/floral-resin-tealight-holders-set-of-4.jpg",
-      tag: "SET OF 4",
-      variants: [
-        {
-          id: "set4",
-          label: "Set of 4",
-          description: "Four floral resin tealight holders",
-          price: 299
-        }
-      ],
-      defaultVariant: "set4"
-    },
+  {
+    id: "floral-resin-tealight-holders-set",
+    name: "Floral Resin Tealight Holders Set",
+    category: "diyas",
+    categoryLabel: "Diyas & Candle Holders",
+    description: "A coordinated set of four floral resin tealight holders for festive tables, home decor and gifting.",
+    image: "images/diwali/floral-resin-tealight-holders-set-of-4.jpg",
+    tag: "Set of 4",
+    variants: [
+      { id: "set-of-4", label: "Set of 4", description: "Four floral resin holders", price: 299 }
+    ],
+    defaultVariant: "set-of-4"
+  },
 
-    {
-      id: "handcrafted-lotus-tealight-diya-set",
-      name: "Handcrafted Lotus Tealight Diya Set",
-      category: "decor",
-      categoryLabel: "Festive decor",
-      description:
-        "A handcrafted lotus-inspired tealight diya set for your home or pooja space.",
-      image: "images/handcrafted-lotus-tealight-diya-set.jpg",
-      tag: "LOTUS DESIGN",
-      variants: [
-        {
-          id: "set4",
-          label: "Set of 4",
-          description: "Four lotus-style tealight diyas",
-          price: 249
-        }
-      ],
-      defaultVariant: "set4"
-    }
-    {
-  id: "candle-light-rangoli",
-  name: "Candle Light Rangoli",
-  category: "decor",
-  categoryLabel: "Festive Decor",
-  description:
-    "Add a warm and luxurious festive glow to your home with this beautiful Candle Light Rangoli. Adorned with vibrant colours, golden detailing and elegant embellishments, it is perfect for decorating your entrance, pooja space or festive corner.",
-  image: "images/diwali/candle-light-rangoli.jpg",
-  tag: "DIWALI DECOR",
-  variants: [
-    {
-      id: "single",
-      label: "One Rangoli",
-      description: "Decorative candle light rangoli",
-      price: 250
-    }
-  ],
-  defaultVariant: "single"
-},
+  {
+    id: "handcrafted-lotus-tealight-diya-set",
+    name: "Handcrafted Lotus Tealight Diya Set",
+    category: "diyas",
+    categoryLabel: "Diyas & Candle Holders",
+    description: "Elegant lotus-inspired tealight diyas that add a graceful glow to your Diwali decorations.",
+    image: "images/diwali/lotus-tealight-diya-set.jpg",
+    tag: "Set of 4",
+    variants: [
+      { id: "set-of-4", label: "Set of 4", description: "Four lotus tealight holders", price: 249 }
+    ],
+    defaultVariant: "set-of-4"
+  },
 
-{
-  id: "floral-diya-set",
-  name: "Handcrafted Floral Diya Set",
-  category: "decor",
-  categoryLabel: "Festive Decor",
-  description:
-    "Brighten your Diwali celebrations with these beautiful handcrafted floral diyas. Featuring vibrant flower-shaped designs, pearl embellishments and elegant golden diya holders, they are perfect for festive decorations, pooja and gifting.",
-  image: "images/diwali/floral-diya-set.jpg",
-  tag: "FESTIVE FAVOURITE",
-  variants: [
-    {
-      id: "set-of-two",
-      label: "Set of 2",
-      description: "Two decorative floral diyas",
-      price: 200
-    }
-  ],
-  defaultVariant: "set-of-two"
-},
+  {
+    id: "candle-light-rangoli",
+    name: "Candle Light Rangoli",
+    category: "diyas",
+    categoryLabel: "Diwali Decor",
+    description: "A beautiful candle-lit rangoli decoration to brighten your festive entrance, pooja corner or celebration table.",
+    image: "images/diwali/candle-light-rangoli.jpg",
+    tag: "Diwali Special",
+    variants: [
+      { id: "standard", label: "Standard Design", description: "Candle light rangoli", price: 250 }
+    ],
+    defaultVariant: "standard"
+  },
 
-{
-  id: "pearl-diamond-diya",
-  name: "Pearl Diamond Designer Diya",
-  category: "decor",
-  categoryLabel: "Festive Decor",
-  description:
-    "Give your festive decor a royal touch with this elegant diamond-shaped diya. Beautifully decorated with pearl detailing, golden accents and rich pink embellishments, it makes a stunning addition to your Diwali pooja and home decor.",
-  image: "images/diwali/pearl-diamond-diya.jpg",
-  tag: "PREMIUM DIYA",
-  variants: [
-    {
-      id: "single",
-      label: "One Diya",
-      description: "Decorative pearl diamond diya",
-      price: 130
-    }
-  ],
-  defaultVariant: "single"
-},
+  {
+    id: "handcrafted-floral-diya-set",
+    name: "Handcrafted Floral Diya Set",
+    category: "diyas",
+    categoryLabel: "Diyas & Candle Holders",
+    description: "A lovely set of two handcrafted floral diyas, perfect for pooja, festive decoration and gifting.",
+    image: "images/diwali/floral-diya-set.jpg",
+    tag: "Set of 2",
+    variants: [
+      { id: "set-of-2", label: "Set of 2", description: "Two handcrafted floral diyas", price: 200 }
+    ],
+    defaultVariant: "set-of-2"
+  },
 
-{
-  id: "diwali-snack-hamper",
-  name: "Diwali Special Snack Hamper",
-  category: "hampers",
-  categoryLabel: "Festive Hampers",
-  description:
-    "🪔✨ Make your Diwali sweeter with our beautifully wrapped hamper filled with delicious snacks, chocolates and treats! 🎁💖 Thoughtfully arranged in elegant festive packaging, it is perfect for gifting your loved ones, friends and family.\n\n✨ Customisation Available\n📩 DM to Order\n🚚 All India Shipping Available",
-  image: "images/diwali/diwali-snack-hamper.jpg",
-  tag: "DIWALI SPECIAL",
-  variants: [
-    {
-      id: "standard",
-      label: "Snack Hamper",
-      description: "Festively wrapped snack and chocolate hamper",
-      price: 450
-    }
-  ],
-  defaultVariant: "standard",
-  customName: true
-},
+  {
+    id: "pearl-diamond-designer-diya",
+    name: "Pearl Diamond Designer Diya",
+    category: "diyas",
+    categoryLabel: "Diyas & Candle Holders",
+    description: "A decorative designer diya with a pearl-inspired finish for an elegant festive look and thoughtful gifting.",
+    image: "images/diwali/pearl-diamond-diya.jpg",
+    tag: "Designer Pick",
+    variants: [
+      { id: "single", label: "Single Piece", description: "One designer diya", price: 130 }
+    ],
+    defaultVariant: "single"
+  },
 
-{
-  id: "diwali-dry-fruit-hamper",
-  name: "Premium Diwali Dry Fruit Gift Hamper",
-  category: "hampers",
-  categoryLabel: "Festive Hampers",
-  description:
-    "Celebrate the festival of lights with our elegant dry fruit gift hamper. Beautifully arranged jars with premium festive wrapping make this hamper a thoughtful gift for family, friends, clients and corporate celebrations. Choose the option that suits your gifting needs.",
-  image: "images/diwali/diwali-dry-fruit-hamper.jpg",
-  tag: "PREMIUM GIFTING",
-  variants: [
-    {
-      id: "without",
-      label: "Without Dry Fruits",
-      description: "Decorative gift hamper packaging without dry fruits",
-      price: 220
-    },
-    {
-      id: "with",
-      label: "With Dry Fruits",
-      description: "Gift hamper with dry fruits",
-      price: 500
-    }
-  ],
-  defaultVariant: "with"
+  {
+    id: "diwali-special-snack-hamper",
+    name: "Diwali Special Snack Hamper",
+    category: "hampers",
+    categoryLabel: "Gift Hampers",
+    description: "A festive snack hamper for sharing happiness with friends, family and loved ones. Personalise it with your preferred name.",
+    image: "images/diwali/diwali-snack-hamper.jpg",
+    tag: "Festive Gifting",
+    customName: true,
+    variants: [
+      { id: "standard", label: "Standard Hamper", description: "Diwali snack hamper", price: 450 }
+    ],
+    defaultVariant: "standard"
+  },
+
+  {
+    id: "premium-diwali-dry-fruit-gift-hamper",
+    name: "Premium Diwali Dry Fruit Gift Hamper",
+    category: "hampers",
+    categoryLabel: "Gift Hampers",
+    description: "A festive premium gift hamper suitable for family gifting, celebrations and special Diwali occasions.",
+    image: "images/diwali/diwali-dry-fruit-hamper.jpg",
+    tag: "Premium",
+    variants: [
+      { id: "without-dry-fruits", label: "Without Dry Fruits", description: "Decorative festive hamper", price: 220 },
+      { id: "with-dry-fruits", label: "With Dry Fruits", description: "Festive hamper with dry fruits", price: 500 }
+    ],
+    defaultVariant: "without-dry-fruits"
   }
-  ];
+];
+
+// Export for use in other JavaScript files, if needed.
+if (typeof module !== "undefined" && module.exports) {
+  module.exports = products;
+       }
+  
+  
    const grid = document.getElementById("diwaliGrid");
   const search = document.getElementById("diwaliSearch");
   const clearSearch = document.getElementById("clearSearch");
